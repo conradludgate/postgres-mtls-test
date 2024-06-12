@@ -78,7 +78,7 @@ fn main() {
     let user2_key_pair = KeyPair::generate_for(&PKCS_ECDSA_P256_SHA256).unwrap();
     let user2_cert = {
         let mut ca_params =
-            CertificateParams::new(vec!["ep-foo-baz-9875.proxy.eu-west-1.aws.neon.build".into()])
+            CertificateParams::new(vec!["ep-foo-baz-9876.proxy.eu-west-1.aws.neon.build".into()])
                 .unwrap();
 
         let nbf = OffsetDateTime::now_utc();
